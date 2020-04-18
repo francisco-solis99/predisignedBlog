@@ -1,4 +1,4 @@
-# predisignedBlog
+# Predisigned Blog
 This is a Blog that I predisigned with adobe xd just to practice. Also i tried to apply the BEM methodology on the styles of this blog.
 
 This is a simple structure of a Blog, I tried to apply the BEM methodology on the styles. You just clone the repositoy and open 
