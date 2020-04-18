@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1600px;
+}
+
+.container{
+    max-width: 1000px;
+    height: 100vh;
+    margin:   30px   auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 155px,repeat(3,1fr), 100px;
+    grid-gap: 20px;
+
+    grid-template-areas: "header     header"
+                         "article1   article2"
+                         "article3   article4"
+                         "article5   article6"
+                         "footer     footer";
+
+}
+
+/* Cabecera sencilla */
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.header__text{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    color: #F2BA00;
+}
+.header__line{
+    border: 2px solid #F2BA00;
+    width: 174px;
+    height: 2px;
+    margin: 0 120px;
+}
+.header__title{
+    font-size: 40px;
+}
+
+
+/* Articulos */
+.article--1{
+    grid-area: article1;
+}
+.article--2{
+    grid-area: article2;
+}
+.article--3{
+    grid-area: article3;
+}
+.article--4{
+    grid-area: article4;
+}
+.article--5{
+    grid-area: article5;
+}
+
+.article__image{
+    width: 484px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.article{
+    margin-bottom: 20px;
+}
+
+.article__link{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+.footer{
+    grid-area: footer;
+    margin-top: 40px;
+}
+
+.footer__text-wraper{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.footer__text{
+    font-weight: lighter;
+    font-size: 20px;
+}
